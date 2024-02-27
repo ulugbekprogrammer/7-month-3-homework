@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="color: green;">Delete the book</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <p>{{book.title}} You want to delete the book?</p>
+    <input type="submit" class="btn btn-danger" value="Yes i will delete" />
+</form>
+{% endblock %}
